@@ -1,0 +1,902 @@
+{
+	"info": {
+		"_postman_id": "55b894d5-0ae3-4831-a1f1-36718055d1f7",
+		"name": "FamilyRoleAdoptionService Facade API Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16351721"
+	},
+	"item": [
+		{
+			"name": "CourierX.svc metadata",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{clientSecret}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{clientId}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/$metadata?$format=json",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"$metadata"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FamilyRoleAdoptionService.getFamilies With FamilyId",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"274\\\",\\\"includeAllFamilies\\\":\\\"\\\",\\\"includeInactive\\\":\\\"\\\",\\\"roleIds\\\":[]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FamilyRoleAdoptionService.getFamilies With IncludeAllFamily=true",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"\\\",\\\"includeAllFamilies\\\":\\\"true\\\",\\\"includeInactive\\\":\\\"\\\",\\\"roleIds\\\":[]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FamilyRoleAdoptionService.getFamilies With includeInactive=true",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"\\\",\\\"includeAllFamilies\\\":\\\"\\\",\\\"includeInactive\\\":\\\"true\\\",\\\"roleIds\\\":[]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FamilyRoleAdoptionService.getFamilies With List of Role Ids",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"\\\",\\\"includeAllFamilies\\\":\\\"\\\",\\\"includeInactive\\\":\\\"false\\\",\\\"roleIds\\\":[2016,2014]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FamilyRoleAdoptionService.getFamilies Random",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"\\\",\\\"includeAllFamilies\\\":\\\"\\\",\\\"includeInactive\\\":\\\"false\\\",\\\"roleIds\\\":[2016,2014]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_ByRoleId",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"roleIds\\\":[2051]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_AllRoles",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getFamilies\",\r\n    \"parametersPayload\": \"{\\\"familyCriteria\\\":{\\\"familyId\\\":\\\"\\\",\\\"includeAllFamilies\\\":\\\"\\\",\\\"includeInactive\\\":\\\"false\\\",\\\"roleIds\\\":[2016,2014]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_RolesByJobCode",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"roleJobCodeCriteria\\\":{\\\"jobCode\\\":[\\\"MGR-CLNC\\\"],\\\"typeEnum\\\":null}}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_getRoleIdByJobCode",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"roleJobCodeCriteria\\\":{\\\"jobCode\\\":[\\\"MGR-CLNC\\\",\\\"ANALYST-IT\\\"],\\\"typeEnum\\\":null, \\\"fetchOnlyRoleId\\\":true},\\\"roleIds\\\":null,\\\"userIds\\\":null,\\\"familyIds\\\":null,\\\"dataTypeCriteria\\\":null,\\\"familyRoleNameCriteria\\\":null }}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_RolesByJobCodes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"roleJobCodeCriteria\\\":{\\\"jobCode\\\":[\\\"MGR-CLNC\\\",\\\"ANALYST-IT\\\"],\\\"typeEnum\\\":null}}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_ByUserId",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"userIds\\\":[\\\"admin\\\",\\\"admin1\\\"]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_ByUserIds",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"userIds\\\":[\\\"cgrant\\\",\\\"admin1\\\"]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_ByFamilyId",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"familyIds\\\":[284]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_ByFamilyIds",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"familyIds\\\":[284,236]}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_roleDataTypeCriteria",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"dataTypeCriteria\\\" : {\\\"mappingDataType\\\":\\\"String\\\", \\\"mappingDataTypeValue\\\":\\\"1\\\"}}}\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{realHost}}/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"host": [
+						"{{realHost}}"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_getRoleIdByName",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"familyRoleNameCriteria\\\" : {\\\"familyName\\\":\\\"TestFamily7817\\\", \\\"roleName\\\":\\\"TestRole7817\\\"}}}\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles_searchRolesByName",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cgrant@AFTCOCLG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seamName\": \"familyRoleAdoptionService\",\r\n    \"methodName\": \"getRoles\",\r\n    \"parametersPayload\": \"{\\\"roleCriteria\\\":{\\\"familyRoleNameCriteria\\\" : {\\\"roleName\\\":\\\"TestRole7817\\\", \\\"locale\\\":\\\"en_US\\\"}}}\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qacand-apigee-int.hcm.ondemand.com/odatav4/internal/automation/couriermeta.svc/executeMethodInSFContextObj",
+					"protocol": "https",
+					"host": [
+						"qacand-apigee-int",
+						"hcm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odatav4",
+						"internal",
+						"automation",
+						"couriermeta.svc",
+						"executeMethodInSFContextObj"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// pm.globals.set(\"mockHost\", \"http://10.236.240.185:1080\");",
+					"// pm.globals.set(\"realHost\", \"https://qaautocand-apigee-int.hcm.ondemand.com\");",
+					"pm.globals.set(\"realHost\", \"https://qacand-apigee-int.hcm.ondemand.com\");",
+					"// pm.globals.set(\"realHost\", \"http://localhost:8080\");",
+					"// pm.globals.set(\"realHost\", \"http://10.236.240.185:8080\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@CDPUXRAUTO\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@H2hhtCDPV1207\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@CDPADFV2\");",
+					"// pm.globals.set(\"clientId\", \"AU0018@CQAUXR\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@TALCDPOMP\");",
+					"// pm.globals.set(\"clientSecret\", \"pwd1234\");",
+					"// pm.globals.set(\"clientId\", \"ecadmin@CDC04H\");",
+					"// pm.globals.set(\"clientSecret\", \"pwd\");",
+					"// pm.globals.set(\"clientId\", \"superuser@CQAUXR\");",
+					"// pm.globals.set(\"clientSecret\", \"pwd\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@TALCDC12LilyH\");",
+					"// pm.globals.set(\"clientSecret\", \"pwd1234\");",
+					"pm.globals.set(\"clientId\", \"cgrant@AFTCOCLG\");",
+					"pm.globals.set(\"clientSecret\", \"pwd2\");",
+					"",
+					"// pm.globals.set(\"realHost\", \"https://perfverihana-apigee-int.hcm.ondemand.com\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@CDPOMPSUPTOFF\");",
+					"// pm.globals.set(\"clientId\", \"cgrant@CDPUXRLOAD\");",
+					"// pm.globals.set(\"clientSecret\", \"pwd\");",
+					"",
+					"// pm.globals.set(\"serviceGroup\", \"talent/development/CareerWorkSheet.svc\");"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

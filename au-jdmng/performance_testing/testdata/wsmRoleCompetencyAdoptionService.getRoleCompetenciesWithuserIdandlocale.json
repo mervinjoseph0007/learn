@@ -1,0 +1,5 @@
+{
+    "seamName": "wsmRoleCompetencyAdoptionService",
+    "methodName": "getRoleCompetencies",
+    "parametersPayload": "{\"userIds\":[\"AE0004\"],\"locale\": null}"
+}

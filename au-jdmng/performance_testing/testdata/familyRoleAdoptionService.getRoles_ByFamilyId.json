@@ -1,0 +1,5 @@
+{
+    "seamName": "familyRoleAdoptionService",
+    "methodName": "getRoles",
+    "parametersPayload": "{\"roleCriteria\":{\"familyIds\":[284]}}"
+}

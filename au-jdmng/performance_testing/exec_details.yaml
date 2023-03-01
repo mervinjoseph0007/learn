@@ -1,0 +1,29 @@
+---
+- application: au-jdmng
+  release: B2305
+  scenario: #List of apis whose performance testing is required
+    - au-jdmng.jmx
+  test_data:
+    - familyRoleAdoptionService.getFamiliesRandom.json
+    - familyRoleAdoptionService.getFamiliesWithFamilyId.json
+    - familyRoleAdoptionService.getFamiliesWithIncludeAllFamily.json
+    - familyRoleAdoptionService.getFamiliesWithincludeInactive.json
+    - familyRoleAdoptionService.getFamiliesWithListofRoleIds.json
+    - familyRoleAdoptionService.searchRolesByName.json
+    - familyRoleAdoptionService.getRoles_ByRoleId.json
+    - familyRoleAdoptionService.getRoles_AllRoles.json
+    - familyRoleAdoptionService.getRolesByJobCode.json
+    - familyRoleAdoptionService.getRoles_ByRoleIdByJobCode.json
+    - familyRoleAdoptionService.getRoles_ByRoleByJobCodes.json
+    - familyRoleAdoptionService.getRoles_ByUserId.json
+    - familyRoleAdoptionService.getRoles_ByUserIds.json
+    - familyRoleAdoptionService.getRoles_ByFamilyId.json
+    - familyRoleAdoptionService.getRoles_ByFamilyIds.json
+    - familyRoleAdoptionService.roleDataTypeCriteria.json
+    - familyRoleAdoptionService.getRoleIdByName.json
+    - wsmRoleCompetencyAdoptionService.getRolesWithRoleCompetencyCriteria.json
+    - wsmRoleCompetencyAdoptionService.getRoleCompetenciesWithRoleCompetencyCriteria.json
+    - wsmRoleCompetencyAdoptionService.getRoleCompetenciesWithuserIdandlocale.json
+    - wsmRoleCompetencyAdoptionService.getRoleCompetenciesWithuserIds.json
+    
+  test_duration_in_min: 15

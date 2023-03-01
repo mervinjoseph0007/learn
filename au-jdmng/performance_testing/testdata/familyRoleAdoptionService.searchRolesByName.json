@@ -1,0 +1,5 @@
+{
+    "seamName": "familyRoleAdoptionService",
+    "methodName": "getRoles",
+    "parametersPayload": "{\"roleCriteria\":{\"familyRoleNameCriteria\" : {\"roleName\":\"TestRole7817\", \"locale\":\"en_US\"}}}"
+}

@@ -1,0 +1,5 @@
+{
+    "seamName": "wsmRoleCompetencyAdoptionService",
+    "methodName": "getRoleCompetencies",
+    "parametersPayload": "{\"roleCompetencyCriteria\":{\"competencyId\":\"\",\"locale\":\"\",\"includeBehaviors\":\"\",\"includeInactive\":\"\",\"roleIds\":[691655]}}"
+}

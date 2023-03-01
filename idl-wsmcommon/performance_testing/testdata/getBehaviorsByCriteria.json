@@ -1,0 +1,5 @@
+{
+    "seamName": "IWSMAdoptionService",
+    "methodName": "getBehaviorsByCriteria",
+    "parametersPayload": "{\"BehaviorRequestCriteria\":{\"behaviorIds\":[100,200],\"locale\":\"en_US\",\"includeInactive\":false}}"
+}

@@ -1,0 +1,5 @@
+{
+    "seamName": "familyRoleAdoptionService",
+    "methodName": "getRoles",
+    "parametersPayload": "{\"roleCriteria\":{\"roleJobCodeCriteria\":{\"jobCode\":[\"MGR-CLNC\",\"ANALYST-IT\"],\"typeEnum\":null, \"fetchOnlyRoleId\":true},\"roleIds\":null,\"userIds\":null,\"familyIds\":null,\"dataTypeCriteria\":null,\"familyRoleNameCriteria\":null }}"
+}

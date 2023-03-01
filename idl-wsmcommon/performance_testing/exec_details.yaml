@@ -1,0 +1,10 @@
+---
+- application: idl-wsmcommon
+  release: B2305
+  scenario: #List of red apis whose performance testing is required
+    - IWSMAdoptionServiceFacadeAPI.jmx
+  test_data:
+    - getBehaviorsByCriteria.json
+    - getLibrariesByCriteria.json
+    - getLibrariesByLibraryId.json
+  test_duration_in_min: 15

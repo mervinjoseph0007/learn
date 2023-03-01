@@ -1,0 +1,5 @@
+{
+    "seamName": "familyRoleAdoptionService",
+    "methodName": "getRoles",
+    "parametersPayload": "{\"roleCriteria\":{\"dataTypeCriteria\" : {\"mappingDataType\":\"String\", \"mappingDataTypeValue\":\"1\"}}}"
+}

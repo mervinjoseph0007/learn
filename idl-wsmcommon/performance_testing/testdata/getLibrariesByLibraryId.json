@@ -1,0 +1,5 @@
+{
+    "seamName": "IWSMAdoptionService",
+    "methodName": "getLibrariesByCriteria",
+    "parametersPayload": "{\"LibraryRequestCriteria\":{\"libraryType\":\"COMPETENCY\",\"libraryIds\":[1874,1875,1876],\"tagNames\":null,\"locale\":null,\"allLibraries\":true,\"includeDescription\":true,\"includeInactive\":false,\"includeCoreLibrariesOnly\":false,\"includeBehaviors\":false,\"includeWACA\":false,\"includeTags\":false}}"
+}
